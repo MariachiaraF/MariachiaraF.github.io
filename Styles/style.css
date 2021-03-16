@@ -1,0 +1,21 @@
+body{
+
+padding-top: 50px;
+
+}
+
+
+.container {
+
+padding-top: 15px;
+padding-bottom: 80px;
+  }
+.carousel-inner > .item {min-height:600px; background-size:cover; background-position: center center}
+
+
+
+hr {
+    display: block;
+    border-color: darkorange;
+    border-width: 3px;
+}

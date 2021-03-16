@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>prova_charts</title>
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../Styles/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  </head>
+  <body>
+
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">Catania Solar Observations</a>
+
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+              <ul class="nav navbar-nav navbar-right">
+
+
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Overview <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="Instruments.html">Instuments</a></li>
+                    <li><a href="Staff.html">Staff</a></li>
+                  </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Latest images <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="Latest_Halpha_images.php">Latest H&alpha; images</a></li>
+                      <li><a href="Latest_Continuum_images.php">Latest Continuum images</a></li>
+                      <li><a href="Latest_USSPS_file.php">Latest USSPS file</a></li>
+                    </ul>
+                  </li>
+
+
+
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Data <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="image_archive.php">Image archive</a></li>
+                    <li><a href="USSPS_archive.php">USSPS archive</a></li>
+                    <li><a href="Data_request.html">Data request</a></li>
+                  </ul>
+                </li>
+
+
+                  <li><a href="Flare_forecasting.html">Flare Forecasting</a></li>
+
+                  <li><a href="http://www.oact.inaf.it/visite/"  target="_blank">Outreach</a></li>
+
+
+
+                  <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="http://swe.ssa.esa.int/solar-weather"
+                  target="_blank">ESA - Space Situational Awareness</a></li>
+                        <li><a href="http://swrl.njit.edu/ghn_web/"
+                  target="_blank">Global High Resolution H-alpha Network</a></li>
+    <li><a href="http://metis.oato.inaf.it/" target="_blank">METIS - Solar Orbiter</a></li>
+
+                        <li><a href="http://www.est-east.eu/est/index.php" target="_blank">European Solar Telescope (EST)</a></li>
+
+                      </ul>
+                    </li>
+
+      <li><a href="Pubblications.html">Pubblications</a></li>
+
+              </ul>
+
+
+
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+
+
+        <div class="container">
+
+
+        <div class="row">
+          <div class="col-xs-6">
+          <h2>Flare Forecasting</h2>
+          </div>
+        </div>
+
+
+
+
+        <p>Active region</p>
+
+
+          <div class="box">
+              <div class="chart" data-percent="73">73%</div>
+          </div>
+          <div class="box">
+              <div class="chart" data-percent="80">80%</div>
+          </div>
+          <div class="box">
+              <div class="chart" data-percent="90">90%</div>
+          </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <script src="jquery.easypiechart.js"></script>
+
+      <script>
+      $(function() {
+        $('.chart').easyPieChart({
+
+            barColor:'orange',
+            lineCap:'butt',
+            lineWidth: 15
+            });
+      });
+      </script>
+
+
+
+
+
+</body>
+</html>
